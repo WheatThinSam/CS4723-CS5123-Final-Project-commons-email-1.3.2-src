@@ -12,12 +12,11 @@ public class Test2 extends TestCase{
 	public void setUp() {
 		testEmail = new SimpleEmail();
 	}
-	public void testAddBcc() throws EmailException {
+	public void testAddCcListofEmails() throws EmailException {
 		System.out.println("This is a message from the test1 test class. pne***");
-		System.out.println("This Tests goal is to check for any errors while creating an email object and using multiple constructors.");
-    
-		testEmail.addBcc("eggs@burger.com");
-		assertEquals("eggs@burger.com", testEmail.getBccAddresses().get(0).toString());
+		System.out.println("This Tests goal is to check for any errors while creating an email array and testing the AddCcListofEmails method");
+		String mails[] = {"sam@egg.com", "dude@d.com", "him@h.com"};
+		testEmail.addCc(mails);
 	}
 
 }
