@@ -13,7 +13,7 @@ public class Test2 extends TestCase{
 		testEmail = new SimpleEmail();
 	}
 	public void testAddCcListofEmails() throws EmailException {
-		System.out.println("This is a message from the test1 test class. pne***");
+		System.out.println("This is a message from the test1 test class. pne*2*");
 		System.out.println("This Tests goal is to check for any errors while creating an email array and testing the AddCcListofEmails method");
 		String mails[] = {"sam@egg.com", "dude@d.com", "him@h.com"};
 		testEmail.addCc(mails);
